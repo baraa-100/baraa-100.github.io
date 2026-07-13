@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البراء للطاقة المتجددة - فخامة الحلول الشمسية</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        solar: {
+                            amber: '#f59e0b',
+                            amberDark: '#d97706',
+                            emerald: '#10b981',
+                            emeraldDark: '#059669',
+                            dark: '#0f172a',
+                            navy: '#0b1329',
+                            slate: '#f8fafc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* تحسينات بصرية إضافية للفخامة */
+        body {
+            background-color: #f8fafc;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #0b1329 100%);
+        }
+        .premium-shadow {
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+        }
+        .premium-shadow:hover {
+            box-shadow: 0 20px 40px -15px rgba(245, 158, 11, 0.15);
+        }
+        /* تصميم السكرول بار */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 flex flex-col min-h-screen">
+
+    <!-- نافبار زجاجي فاخر -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-solar-amber to-solar-emerald flex items-center justify-center text-white text-2xl shadow-lg shadow-solar-amber/20">
+                    <i class="fa-solid fa-solar-panel"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-solar-dark tracking-tight">البراء</span>
+                    <span class="text-xs block text-solar-emerald font-semibold uppercase tracking-wider">لأنظمة الطاقة الشمسية</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/9647700000000" target="_blank" class="bg-solar-emerald hover:bg-solar-emeraldDark text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-md shadow-solar-emerald/10 transition-all duration-300 transform hover:-translate-y-0.5 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>استشارة مجانية</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- واجهة هيرو (Hero Section) للمشروع الفخم -->
+    <section class="hero-gradient text-white py-20 lg:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.15),transparent_45%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(16,185,129,0.1),transparent_45%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-1.5 py-1 px-3.5 rounded-full text-xs font-bold bg-solar-amber/10 text-solar-amber border border-solar-amber/20 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-solar-amber animate-pulse"></span>
+                مستقبل الطاقة النظيفة في العراق
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 leading-tight max-w-4xl mx-auto">
+                امتلك طاقتك المستقلة بأرقى <span class="text-transparent bg-clip-text bg-gradient-to-r from-solar-amber to-solar-emerald">المكونات العالمية</span>
+            </h1>
+            <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                نوفر أحدث الألواح الشمسية، البطاريات المتطورة، والأنفيرتيرات الذكية المتكاملة مع خدمة الفحص والتركيب الاحترافي.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#store" class="bg-solar-amber hover:bg-solar-amberDark text-solar-dark font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-solar-amber/20 transition-all duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
+                    تصفح الأجهزة المتاحة
+                </a>
+                <a href="#features" class="border border-slate-700 hover:border-slate-500 hover:bg-slate-800/40 text-slate-300 font-bold px-8 py-4 rounded-xl transition-all duration-300 w-full sm:w-auto">
+                    لماذا نتميز؟
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- مميزات الشركة السريعة -->
+    <section id="features" class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex items-start gap-4 p-4">
+                <div class="w-12 h-12 rounded-xl bg-solar-amber/10 flex items-center justify-center text-solar-amber text-xl shrink-0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-solar-dark mb-1">ضمانات حقيقية</h3>
+                    <p class="text-slate-500 text-sm">كفالة تشغيلية طويلة المدى على الألواح والبطاريات ضد العيوب المصنعية.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4">
+                <div class="w-12 h-12 rounded-xl bg-solar-emerald/10 flex items-center justify-center text-solar-emerald text-xl shrink-0">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-solar-dark mb-1">فريق هندسي متخصص</h3>
+                    <p class="text-slate-500 text-sm">نخبة من المهندسين لتركيب المنظومات بدقة وموثوقية تناسب منزلك أو مشروعك.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-solar-dark mb-1">دعم فني مستمر</h3>
+                    <p class="text-slate-500 text-sm">خدمة ما بعد البيع ومتابعة دورية لكفاءة المنظومة الخاصة بك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المعرض التفاعلي الفخم -->
+    <main id="store" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- بار البحث والتصفية -->
+        <div class="mb-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-solar-dark mb-2">معرض الأجهزة والمنظومات</h2>
+                    <p class="text-slate-500 text-sm">تصفح وقارن واطلب أفضل الأجهزة مباشرة عبر شيت محدث لحظياً.</p>
+                </div>
+                
+                <!-- حقل البحث -->
+                <div class="relative max-w-md w-full">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث عن جهاز معين..." class="w-full pl-12 pr-5 py-3 rounded-xl border border-slate-200 focus:border-solar-amber focus:ring-2 focus:ring-solar-amber/20 outline-none transition-all duration-300 text-sm">
+                </div>
+            </div>
+
+            <!-- أزرار تصفية التصنيفات -->
+            <div class="flex flex-wrap gap-2.5 mt-8 border-b border-slate-200 pb-5" id="categoryFilters">
+                <button onclick="filterCategory('الكل')" class="filter-btn active px-5 py-2.5 rounded-lg text-sm font-bold bg-solar-dark text-white transition-all duration-300 shadow-sm">الكل</button>
+                <button onclick="filterCategory('ألواح شمسية')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الألواح الشمسية</button>
+                <button onclick="filterCategory('بطاريات')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">البطاريات</button>
+                <button onclick="filterCategory('انفيرتيرات')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الانفيرتيرات</button>
+            </div>
+        </div>
+
+        <!-- حالة التحميل والخطأ -->
+        <div id="loadingState" class="flex flex-col items-center justify-center py-20">
+            <div class="w-12 h-12 border-4 border-solar-amber border-t-transparent rounded-full animate-spin mb-4"></div>
+            <p class="text-slate-500 text-sm">جاري جلب أحدث الأجهزة الفخمة من غوغل شيت...</p>
+        </div>
+
+        <div id="errorState" class="hidden flex-col items-center justify-center py-16 text-center">
+            <div class="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-500 text-2xl mb-4">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3 class="font-bold text-lg text-solar-dark mb-1">لم نتمكن من الاتصال بالبيانات المباشرة</h3>
+            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">الموقع الآن يعرض الأجهزة الافتراضية التجريبية. يرجى مراجعة وتعديل رابط الـ Web App المذكور في كود الـ JavaScript.</p>
+        </div>
+
+        <!-- شبكة المنتجات (Products Grid) -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 hidden">
+            <!-- سيتم ملؤها برمجياً بواسطة JS -->
+        </div>
+
+    </main>
+
+    <!-- نافذة تفاصيل المنتج المنبثقة (Premium Detailed Modal) -->
+    <div id="productModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden transition-all duration-300 opacity-0">
+        <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl transform scale-95 transition-all duration-300 relative">
+            <button onclick="closeModal()" class="absolute top-4 left-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 transition-all duration-300 z-10">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <!-- صورة المنبثق -->
+                <div class="h-64 md:h-full bg-slate-50 relative">
+                    <img id="modalImage" src="" alt="" class="w-full h-full object-cover">
+                </div>
+                <!-- تفاصيل المنبثق -->
+                <div class="p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <span id="modalCategory" class="inline-block px-3 py-1 bg-solar-amber/10 text-solar-amber text-xs font-bold rounded-md mb-3"></span>
+                        <h3 id="modalName" class="text-xl font-bold text-solar-dark mb-3"></h3>
+                        <p id="modalPrice" class="text-2xl font-black text-solar-emerald mb-4"></p>
+                        
+                        <h4 class="font-bold text-sm text-solar-dark mb-2">المواصفات الفنية:</h4>
+                        <div id="modalSpecs" class="text-slate-600 text-sm mb-6 leading-relaxed space-y-1">
+                            <!-- سيتم ملؤها بالـ JS -->
+                        </div>
+
+                        <h4 class="font-bold text-sm text-solar-dark mb-2">الوصف:</h4>
+                        <p id="modalDescription" class="text-slate-500 text-xs sm:text-sm mb-6 leading-relaxed"></p>
+                    </div>
+
+                    <a id="modalOrderBtn" href="" target="_blank" class="w-full bg-solar-emerald hover:bg-solar-emeraldDark text-white py-3.5 rounded-xl font-extrabold flex items-center justify-center gap-2 shadow-lg shadow-solar-emerald/10 transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>احجز هذا الجهاز الآن</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل فخم للموقع (Footer) -->
+    <footer class="bg-solar-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <div class="flex items-center gap-2 text-white mb-4">
+                    <i class="fa-solid fa-solar-panel text-solar-amber text-xl"></i>
+                    <span class="font-black text-lg">البراء للطاقة المتجددة</span>
+                </div>
+                <p class="text-sm leading-relaxed">منظومات طاقة شمسية متكاملة ومدروسة هندسياً بأعلى معايير الجودة لتوفير كفاءة واستمرارية مثالية للبيوت والمنشآت التجارية.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="#store" class="hover:text-solar-amber transition-colors">معرض الأجهزة</a></li>
+                    <li><a href="#features" class="hover:text-solar-amber transition-colors">ميزات الخدمة</a></li>
+                    <li><a href="https://wa.me/9647700000000" target="_blank" class="hover:text-solar-amber transition-colors">طلب استشارة فنية</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">معلومات الاتصال</h4>
+                <p class="text-sm mb-3 flex items-center gap-2.5"><i class="fa-solid fa-location-dot text-solar-amber"></i> العراق - الأنبار / الفلوجة</p>
+                <p class="text-sm mb-3 flex items-center gap-2.5"><i class="fa-brands fa-whatsapp text-solar-emerald"></i> 07700000000</p>
+                <p class="text-sm flex items-center gap-2.5"><i class="fa-regular fa-envelope text-solar-amber"></i> contact@baraa-solar.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
+            &copy; 2026 البراء للطاقة المتجددة. جميع الحقوق محفوظة. صمم بمحبة وفخامة.
+        </div>
+    </footer>
+
+    <!-- البرمجة التفاعلية للموقع (JavaScript) -->
+    <script>
+        // ---------------------------------------------------------------------------------
+        // [تنبيه هام جداً بلال عيوني]: استبدل الرابط أدناه بالرابط الذي نسخته من غوغل سكربت!
+        // ---------------------------------------------------------------------------------
+        const API_URL = "https://script.google.com/macros/s/AKfycbwaVeIAJln5_Rm6SkzeG6mvx8xROE9kmarBk9ffKiqCObPCjUpzu0-5Vx_996t9pefn/exec"; 
+        
+        // رقم الواتساب الذي ستستلمون عليه الطلبات (مع الرمز الدولي بدون أصفار إضافية)
+        const WHATSAPP_NUMBER = "9647875415845"; 
+
+        let allProducts = [];
+        let currentCategory = "الكل";
+
+        // بيانات تجريبية فخمة تظهر تلقائياً كـ (Fallback) لكي يعمل موقعك فوراً لحين وضع الرابط الفعلي
+        const demoProducts = [
+            {
+                id: 1,
+                name: "لوح شمسي أحادي البلورة 550 واط",
+                category: "ألواح شمسية",
+                description: "لوح شمسي عالي الكفاءة ومصمم لمقاومة درجات الحرارة المرتفعة جداً في العراق بكفاءة تزيد عن 21%. مثالي جداً لأسطح البيوت والمنشآت الاستثمارية.",
+                price: "$115",
+                image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+                specs: "القدرة: 550 واط | الكفاءة: 21.3% | الضمان: 25 سنة كفالة مصنعية"
+            },
+            {
+                id: 2,
+                name: "جدار طاقة ليثيوم 48 فولت 100 أمبير",
+                category: "بطاريات",
+                description: "بطارية ليثيوم ذكية وآمنة جداً (LiFePO4) لخدمة تزيد عن 10 سنوات، متوافقة مع كل الانفيرتيرات الحديثة وتحافظ على كفاءتها في التفريغ العميق.",
+                price: "$1,250",
+                image: "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80",
+                specs: "الجهد: 48 فولت | السعة: 100 أمبير (4.8 كيلو واط ساعي) | دورات الشحن: 6000 دورة"
+            },
+            {
+                id: 3,
+                name: "انفيرتير ذكي هجين 5.6 كيلو واط",
+                category: "انفيرتيرات",
+                description: "انفيرتير هجين يعمل مع وبدون بطاريات، مزود بمنظم شحن داخلي دبل MPPT وميزة المراقبة من الموبايل عبر الواي فاي لمتابعة الاستهلاك والشحن لحظة بلحظة.",
+                price: "$480",
+                image: "https://images.unsplash.com/photo-1548613053-220ef358109a?auto=format&fit=crop&w=800&q=80",
+                specs: "القدرة: 5.6 كيلو واط | نظام الشحن: MPPT 100A | شاشة: ملونة لمسية"
+            }
+        ];
+
+        // تهيئة وجلب البيانات عند التشغيل
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchProducts();
+
+            // ربط حقل البحث
+            document.getElementById("searchInput").addEventListener("input", filterAndRenderProducts);
+        });
+
+        // دالة جلب البيانات
+        async function fetchProducts() {
+            const loadingState = document.getElementById("loadingState");
+            const productsGrid = document.getElementById("productsGrid");
+            const errorState = document.getElementById("errorState");
+
+            if (API_URL === "رابط_ويب_أب_غوغل_هنا" || !API_URL) {
+                // استخدام البيانات التجريبية إذا لم يتم وضع الرابط الفعلي
+                console.warn("جاري استخدام البيانات التجريبية. قم بتعديل متغير API_URL لعرض بيانات غوغل شيت الفعلي.");
+                allProducts = demoProducts;
+                loadingState.classList.add("hidden");
+                productsGrid.classList.remove("hidden");
+                filterAndRenderProducts();
+                return;
+            }
+
+            try {
+                const response = await fetch(API_URL);
+                if (!response.ok) throw new Error("تعذر جلب البيانات");
+                allProducts = await response.json();
+                
+                loadingState.classList.add("hidden");
+                productsGrid.classList.remove("hidden");
+                filterAndRenderProducts();
+            } catch (error) {
+                console.error("خطأ في جلب البيانات المباشرة:", error);
+                allProducts = demoProducts; // استخدام الاحتياطي في حال تعذر الاتصال
+                loadingState.classList.add("hidden");
+                errorState.classList.remove("hidden");
+                productsGrid.classList.remove("hidden");
+                filterAndRenderProducts();
+            }
+        }
+
+        // دالة عرض المنتجات مع البحث والتصفية
+        function filterAndRenderProducts() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            const grid = document.getElementById("productsGrid");
+            grid.innerHTML = "";
+
+            const filtered = allProducts.filter(product => {
+                const matchesCategory = currentCategory === "الكل" || product.category === currentCategory;
+                const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+                                      (product.description && product.description.toLowerCase().includes(searchTerm)) ||
+                                      (product.specs && product.specs.toLowerCase().includes(searchTerm));
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fa-solid fa-box-open text-slate-300 text-5xl mb-4"></i>
+                        <p class="text-slate-500 font-bold">عذراً، لم نجد أي جهاز يطابق بحثك حالياً.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(product => {
+                // جلب صورة افتراضية فخمة في حال لم يكن هناك صورة معينة
+                const imgUrl = product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
+                
+                // صياغة رسالة الواتساب الجاهزة
+                const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
+                const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+
+                const card = document.createElement("div");
+                card.className = "bg-white rounded-2xl overflow-hidden border border-slate-100 premium-shadow transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-56 bg-slate-100 overflow-hidden group">
+                            <img src="${imgUrl}" alt="${product.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-solar-dark text-xs font-extrabold px-3 py-1.5 rounded-lg border border-slate-100 shadow-sm">${product.category}</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-extrabold text-lg text-solar-dark mb-2 leading-snug line-clamp-1">${product.name}</h3>
+                            <p class="text-solar-emerald font-black text-xl mb-4">${product.price || 'طلب مخصص'}</p>
+                            <p class="text-slate-500 text-xs sm:text-sm line-clamp-2 leading-relaxed mb-4">${product.description || 'لا يوجد وصف متاح.'}</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 grid grid-cols-2 gap-3">
+                        <button onclick="openModal(${JSON.stringify(product).replace(/"/g, '&quot;')})" class="border border-slate-200 hover:border-solar-amber text-slate-700 hover:text-solar-amber py-3 rounded-xl text-xs font-bold transition-colors duration-300 flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>تفاصيل</span>
+                        </button>
+                        <a href="${whatsappLink}" target="_blank" class="bg-solar-emerald hover:bg-solar-emeraldDark text-white py-3 rounded-xl text-xs font-bold transition-colors duration-300 flex items-center justify-center gap-1.5 shadow-sm shadow-solar-emerald/10">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>طلب سريع</span>
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // دالة تصفية المنتجات عن طريق الأزرار
+        function filterCategory(category) {
+            currentCategory = category;
+            
+            // تحديث تصميم الأزرار الفعالة
+            const buttons = document.querySelectorAll(".filter-btn");
+            buttons.forEach(btn => {
+                if (btn.innerText.includes(category) || (category === "الكل" && btn.innerText === "الكل")) {
+                    btn.className = "filter-btn active px-5 py-2.5 rounded-lg text-sm font-bold bg-solar-dark text-white transition-all duration-300 shadow-sm";
+                } else {
+                    btn.className = "filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200";
+                }
+            });
+
+            filterAndRenderProducts();
+        }
+
+        // فتح نافذة تفاصيل المنتج المخصصة (Modal)
+        function openModal(product) {
+            const modal = document.getElementById("productModal");
+            const modalImage = document.getElementById("modalImage");
+            const modalName = document.getElementById("modalName");
+            const modalPrice = document.getElementById("modalPrice");
+            const modalCategory = document.getElementById("modalCategory");
+            const modalDescription = document.getElementById("modalDescription");
+            const modalSpecs = document.getElementById("modalSpecs");
+            const modalOrderBtn = document.getElementById("modalOrderBtn");
+
+            modalImage.src = product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
+            modalName.innerText = product.name;
+            modalPrice.innerText = product.price || "طلب مخصص";
+            modalCategory.innerText = product.category;
+            modalDescription.innerText = product.description || "لا يوجد وصف مفصل متاح لهذا الجهاز حالياً، يرجى الاستفسار من فريق الدعم مباشرة.";
+            
+            // معالجة المواصفات وتقسيمها عبر الرمز |
+            modalSpecs.innerHTML = "";
+            if (product.specs) {
+                const specsArray = product.specs.split("|");
+                specsArray.forEach(spec => {
+                    const li = document.createElement("div");
+                    li.className = "flex items-center gap-2 text-slate-600";
+                    li.innerHTML = `<i class="fa-solid fa-circle-check text-solar-amber text-xs"></i> <span>${spec.trim()}</span>`;
+                    modalSpecs.appendChild(li);
+                });
+            } else {
+                modalSpecs.innerHTML = `<div class="text-slate-400 italic">لا توجد مواصفات فنية إضافية مسجلة حالياً.</div>`;
+            }
+
+            // صياغة رسالة الطلب من داخل النافذة المنبثقة
+            const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة، أود حجز والاستفسار عن منتجكم المتميز:\n\n*الاسم:* ${product.name}\n*السعر:* ${product.price || 'حسب الاتفاق'}`);
+            modalOrderBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+
+            // أنيميشن الفتح
+            modal.classList.remove("hidden");
+            setTimeout(() => {
+                modal.classList.add("opacity-100");
+                modal.firstElementChild.classList.remove("scale-95");
+                modal.firstElementChild.classList.add("scale-100");
+            }, 10);
+        }
+
+        // إغلاق النافذة المنبثقة
+        function closeModal() {
+            const modal = document.getElementById("productModal");
+            modal.classList.remove("opacity-100");
+            modal.firstElementChild.classList.remove("scale-100");
+            modal.firstElementChild.classList.add("scale-95");
+            setTimeout(() => {
+                modal.classList.add("hidden");
+            }, 300);
+        }
+
+        // إغلاق المنبثق عند الضغط خارج المحتوى
+        window.onclick = function(event) {
+            const modal = document.getElementById("productModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
