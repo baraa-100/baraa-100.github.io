@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>النواعير للطاقة المتجددة - فخامة الحلول الشمسية</title>
+    <title>البراء للطاقة المتجددة - فخامة الحلول الشمسية</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
                     <i class="fa-solid fa-solar-panel"></i>
                 </div>
                 <div>
-                    <span class="text-xl font-extrabold text-solar-dark tracking-tight">النواعير</span>
+                    <span class="text-xl font-extrabold text-solar-dark tracking-tight">البراء</span>
                     <span class="text-xs block text-solar-emerald font-semibold uppercase tracking-wider">لأنظمة الطاقة الشمسية</span>
                 </div>
             </div>
@@ -106,7 +106,9 @@
                 <a href="#store" class="bg-solar-amber hover:bg-solar-amberDark text-solar-dark font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-solar-amber/20 transition-all duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
                     تصفح الأجهزة المتاحة
                 </a>
-               
+                <a href="#features" class="border border-slate-700 hover:border-slate-500 hover:bg-slate-800/40 text-slate-300 font-bold px-8 py-4 rounded-xl transition-all duration-300 w-full sm:w-auto">
+                    لماذا نتميز؟
+                </a>
             </div>
         </div>
     </section>
@@ -127,13 +129,19 @@
                 <div class="w-12 h-12 rounded-xl bg-solar-emerald/10 flex items-center justify-center text-solar-emerald text-xl shrink-0">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                 </div>
-                
+                <div>
+                    <h3 class="font-bold text-lg text-solar-dark mb-1">فريق هندسي متخصص</h3>
+                    <p class="text-slate-500 text-sm">نخبة من المهندسين لتركيب المنظومات بدقة وموثوقية تناسب منزلك أو مشروعك.</p>
+                </div>
             </div>
             <div class="flex items-start gap-4 p-4">
                 <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 text-xl shrink-0">
                     <i class="fa-solid fa-headset"></i>
                 </div>
-               
+                <div>
+                    <h3 class="font-bold text-lg text-solar-dark mb-1">دعم فني مستمر</h3>
+                    <p class="text-slate-500 text-sm">خدمة ما بعد البيع ومتابعة دورية لكفاءة المنظومة الخاصة بك.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -168,7 +176,7 @@
         <!-- حالة التحميل والخطأ -->
         <div id="loadingState" class="flex flex-col items-center justify-center py-20">
             <div class="w-12 h-12 border-4 border-solar-amber border-t-transparent rounded-full animate-spin mb-4"></div>
-            <p class="text-slate-500 text-sm">جاري التحميل...</p>
+            <p class="text-slate-500 text-sm">جاري جلب أحدث الأجهزة الفخمة من غوغل شيت...</p>
         </div>
 
         <div id="errorState" class="hidden flex-col items-center justify-center py-16 text-center">
@@ -229,7 +237,7 @@
             <div>
                 <div class="flex items-center gap-2 text-white mb-4">
                     <i class="fa-solid fa-solar-panel text-solar-amber text-xl"></i>
-                    <span class="font-black text-lg">النواعير للطاقة المتجددة</span>
+                    <span class="font-black text-lg">البراء للطاقة المتجددة</span>
                 </div>
                 <p class="text-sm leading-relaxed">منظومات طاقة شمسية متكاملة ومدروسة هندسياً بأعلى معايير الجودة لتوفير كفاءة واستمرارية مثالية للبيوت والمنشآت التجارية.</p>
             </div>
@@ -249,7 +257,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
-            &copy; 2026 النواعير للطاقة المتجددة. جميع الحقوق محفوظة. صمم بمحبة وفخامة.
+            &copy; 2026 البراء للطاقة المتجددة. جميع الحقوق محفوظة. صمم بمحبة وفخامة.
         </div>
     </footer>
 
@@ -258,10 +266,10 @@
         // ---------------------------------------------------------------------------------
         // [تنبيه هام جداً بلال عيوني]: استبدل الرابط أدناه بالرابط الذي نسخته من غوغل سكربت!
         // ---------------------------------------------------------------------------------
-        const API_URL = "https://script.google.com/macros/s/AKfycbwaVeIAJln5_Rm6SkzeG6mvx8xROE9kmarBk9ffKiqCObPCjUpzu0-5Vx_996t9pefn/exec"; 
+        const API_URL = "رابط_ويب_أب_غوغل_هنا"; 
         
         // رقم الواتساب الذي ستستلمون عليه الطلبات (مع الرمز الدولي بدون أصفار إضافية)
-        const WHATSAPP_NUMBER = "9647875415845"; 
+        const WHATSAPP_NUMBER = "9647700000000"; 
 
         let allProducts = [];
         let currentCategory = "الكل";
@@ -368,7 +376,7 @@
                 const imgUrl = product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
                 
                 // صياغة رسالة الواتساب الجاهزة
-                const whatsappMessage = encodeURIComponent(`مرحباً النواعير للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
+                const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
                 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
                 const card = document.createElement("div");
@@ -449,7 +457,7 @@
             }
 
             // صياغة رسالة الطلب من داخل النافذة المنبثقة
-            const whatsappMessage = encodeURIComponent(`مرحباً النواعير للطاقة، أود حجز والاستفسار عن منتجكم المتميز:\n\n*الاسم:* ${product.name}\n*السعر:* ${product.price || 'حسب الاتفاق'}`);
+            const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة، أود حجز والاستفسار عن منتجكم المتميز:\n\n*الاسم:* ${product.name}\n*السعر:* ${product.price || 'حسب الاتفاق'}`);
             modalOrderBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
             // أنيميشن الفتح
