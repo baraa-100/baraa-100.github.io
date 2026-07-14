@@ -246,7 +246,7 @@
                 <ul class="space-y-2.5 text-sm">
                     <li><a href="#store" class="hover:text-solar-amber transition-colors">معرض الأجهزة</a></li>
                     <li><a href="#features" class="hover:text-solar-amber transition-colors">ميزات الخدمة</a></li>
-                    <li><a href="https://wa.me/9647700000000" target="_blank" class="hover:text-solar-amber transition-colors">طلب استشارة فنية</a></li>
+                    <li><a href="https://wa.me/9647875415845" target="_blank" class="hover:text-solar-amber transition-colors">طلب استشارة فنية</a></li>
                 </ul>
             </div>
             <div>
@@ -287,7 +287,8 @@
             const productsGrid = document.getElementById("productsGrid");
             const errorState = document.getElementById("errorState");
 
-            if (API_URL === "https://script.google.com/macros/s/AKfycbwaVeIAJln5_Rm6SkzeG6mvx8xROE9kmarBk9ffKiqCObPCjUpzu0-5Vx_996t9pefn/exec" || !API_URL) {
+            // التحقق فقط إذا كان الرابط غير موجود أو لم يتم وضعه
+            if (!API_URL || API_URL === "" || API_URL.includes("رابط_ويب_أب")) {
                 loadingState.classList.add("hidden");
                 errorState.classList.remove("hidden");
                 return;
