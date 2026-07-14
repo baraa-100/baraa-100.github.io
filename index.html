@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>البراء للطاقة المتجددة - فخامة الحلول الشمسية</title>
+    <title>النواعير للطاقة المتجددة - فخامة الحلول الشمسية</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
                     <i class="fa-solid fa-solar-panel"></i>
                 </div>
                 <div>
-                    <span class="text-xl font-extrabold text-solar-dark tracking-tight">البراء</span>
+                    <span class="text-xl font-extrabold text-solar-dark tracking-tight">النواعير</span>
                     <span class="text-xs block text-solar-emerald font-semibold uppercase tracking-wider">لأنظمة الطاقة الشمسية</span>
                 </div>
             </div>
@@ -183,8 +183,8 @@
             <div class="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-500 text-2xl mb-4">
                 <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
-            <h3 class="font-bold text-lg text-solar-dark mb-1">لم نتمكن من الاتصال بالبيانات المباشرة</h3>
-            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">يرجى التأكد من إضافة رابط الـ Web App الخاص بغوغل شيت وتحديث الكود لكي تظهر الأجهزة الخاصة بكم.</p>
+            <h3 class="font-bold text-lg text-solar-dark mb-1">.......</h3>
+            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">.......</p>
         </div>
 
         <!-- شبكة المنتجات (Products Grid) -->
@@ -237,7 +237,7 @@
             <div>
                 <div class="flex items-center gap-2 text-white mb-4">
                     <i class="fa-solid fa-solar-panel text-solar-amber text-xl"></i>
-                    <span class="font-black text-lg">البراء للطاقة المتجددة</span>
+                    <span class="font-black text-lg">النواعير للطاقة المتجددة</span>
                 </div>
                 <p class="text-sm leading-relaxed">منظومات طاقة شمسية متكاملة ومدروسة هندسياً بأعلى معايير الجودة لتوفير كفاءة واستمرارية مثالية للبيوت والمنشآت التجارية.</p>
             </div>
@@ -252,12 +252,11 @@
             <div>
                 <h4 class="text-white font-bold mb-4">معلومات الاتصال</h4>
                 <p class="text-sm mb-3 flex items-center gap-2.5"><i class="fa-solid fa-location-dot text-solar-amber"></i> العراق - الأنبار / الفلوجة</p>
-                <p class="text-sm mb-3 flex items-center gap-2.5"><i class="fa-brands fa-whatsapp text-solar-emerald"></i> 07700000000</p>
-                <p class="text-sm flex items-center gap-2.5"><i class="fa-regular fa-envelope text-solar-amber"></i> contact@baraa-solar.com</p>
+                <p class="text-sm mb-3 flex items-center gap-2.5"><i class="fa-brands fa-whatsapp text-solar-emerald"></i> 07875415845</p>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
-            &copy; 2026 البراء للطاقة المتجددة. جميع الحقوق محفوظة. صمم بمحبة وفخامة.
+            &copy; 2026 النواعير للطاقة المتجددة. جميع الحقوق محفوظة.
         </div>
     </footer>
 
@@ -266,10 +265,10 @@
         // ---------------------------------------------------------------------------------
         // [تنبيه هام جداً بلال عيوني]: استبدل الرابط أدناه بالرابط الذي نسخته من غوغل سكربت!
         // ---------------------------------------------------------------------------------
-        const API_URL = "رابط_ويب_أب_غوغل_هنا"; 
+        const API_URL = "https://script.google.com/macros/s/AKfycbwaVeIAJln5_Rm6SkzeG6mvx8xROE9kmarBk9ffKiqCObPCjUpzu0-5Vx_996t9pefn/exec"; 
         
         // رقم الواتساب الذي ستستلمون عليه الطلبات (مع الرمز الدولي بدون أصفار إضافية)
-        const WHATSAPP_NUMBER = "9647700000000"; 
+        const WHATSAPP_NUMBER = "9647875415845"; 
 
         let allProducts = [];
         let currentCategory = "الكل";
@@ -288,7 +287,7 @@
             const productsGrid = document.getElementById("productsGrid");
             const errorState = document.getElementById("errorState");
 
-            if (API_URL === "رابط_ويب_أب_غوغل_هنا" || !API_URL) {
+            if (API_URL === "https://script.google.com/macros/s/AKfycbwaVeIAJln5_Rm6SkzeG6mvx8xROE9kmarBk9ffKiqCObPCjUpzu0-5Vx_996t9pefn/exec" || !API_URL) {
                 loadingState.classList.add("hidden");
                 errorState.classList.remove("hidden");
                 return;
@@ -336,7 +335,7 @@
             filtered.forEach(product => {
                 const imgUrl = product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
                 
-                const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
+                const whatsappMessage = encodeURIComponent(`مرحباً النواعير للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
                 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
                 const card = document.createElement("div");
@@ -417,7 +416,7 @@
             }
 
             // صياغة رسالة الطلب من داخل النافذة المنبثقة
-            const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة، أود حجز والاستفسار عن منتجكم المتميز:\n\n*الاسم:* ${product.name}\n*السعر:* ${product.price || 'حسب الاتفاق'}`);
+            const whatsappMessage = encodeURIComponent(`مرحباً النواعير للطاقة، أود حجز والاستفسار عن منتجكم المتميز:\n\n*الاسم:* ${product.name}\n*السعر:* ${product.price || 'حسب الاتفاق'}`);
             modalOrderBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
             // أنيميشن الفتح
