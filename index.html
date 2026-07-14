@@ -166,10 +166,10 @@
 
             <!-- أزرار تصفية التصنيفات -->
             <div class="flex flex-wrap gap-2.5 mt-8 border-b border-slate-200 pb-5" id="categoryFilters">
-                <button onclick="filterCategory('الكل')" class="filter-btn active px-5 py-2.5 rounded-lg text-sm font-bold bg-solar-dark text-white transition-all duration-300 shadow-sm">الكل</button>
-                <button onclick="filterCategory('ألواح شمسية')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الألواح الشمسية</button>
-                <button onclick="filterCategory('بطاريات')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">البطاريات</button>
-                <button onclick="filterCategory('انفيرتيرات')" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الانفيرتيرات</button>
+                <button onclick="filterCategory('الكل')" data-category="الكل" class="filter-btn active px-5 py-2.5 rounded-lg text-sm font-bold bg-solar-dark text-white transition-all duration-300 shadow-sm">الكل</button>
+                <button onclick="filterCategory('ألواح شمسية')" data-category="ألواح شمسية" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الألواح الشمسية</button>
+                <button onclick="filterCategory('بطاريات')" data-category="بطاريات" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">البطاريات</button>
+                <button onclick="filterCategory('انفيرتيرات')" data-category="انفيرتيرات" class="filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">الانفيرتيرات</button>
             </div>
         </div>
 
@@ -184,7 +184,7 @@
                 <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
             <h3 class="font-bold text-lg text-solar-dark mb-1">لم نتمكن من الاتصال بالبيانات المباشرة</h3>
-            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">الموقع الآن يعرض الأجهزة الافتراضية التجريبية. يرجى مراجعة وتعديل رابط الـ Web App المذكور في كود الـ JavaScript.</p>
+            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">يرجى التأكد من إضافة رابط الـ Web App الخاص بغوغل شيت وتحديث الكود لكي تظهر الأجهزة الخاصة بكم.</p>
         </div>
 
         <!-- شبكة المنتجات (Products Grid) -->
@@ -274,37 +274,6 @@
         let allProducts = [];
         let currentCategory = "الكل";
 
-        // بيانات تجريبية فخمة تظهر تلقائياً كـ (Fallback) لكي يعمل موقعك فوراً لحين وضع الرابط الفعلي
-        const demoProducts = [
-            {
-                id: 1,
-                name: "لوح شمسي أحادي البلورة 550 واط",
-                category: "ألواح شمسية",
-                description: "لوح شمسي عالي الكفاءة ومصمم لمقاومة درجات الحرارة المرتفعة جداً في العراق بكفاءة تزيد عن 21%. مثالي جداً لأسطح البيوت والمنشآت الاستثمارية.",
-                price: "$115",
-                image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-                specs: "القدرة: 550 واط | الكفاءة: 21.3% | الضمان: 25 سنة كفالة مصنعية"
-            },
-            {
-                id: 2,
-                name: "جدار طاقة ليثيوم 48 فولت 100 أمبير",
-                category: "بطاريات",
-                description: "بطارية ليثيوم ذكية وآمنة جداً (LiFePO4) لخدمة تزيد عن 10 سنوات، متوافقة مع كل الانفيرتيرات الحديثة وتحافظ على كفاءتها في التفريغ العميق.",
-                price: "$1,250",
-                image: "",
-                specs: "الجهد: 48 فولت | السعة: 100 أمبير (4.8 كيلو واط ساعي) | دورات الشحن: 6000 دورة"
-            },
-            {
-                id: 3,
-                name: "انفيرتير ذكي هجين 5.6 كيلو واط",
-                category: "انفيرتيرات",
-                description: "انفيرتير هجين يعمل مع وبدون بطاريات، مزود بمنظم شحن داخلي دبل MPPT وميزة المراقبة من الموبايل عبر الواي فاي لمتابعة الاستهلاك والشحن لحظة بلحظة.",
-                price: "$480",
-                image: "https://images.unsplash.com/photo-1548613053-220ef358109a?auto=format&fit=crop&w=800&q=80",
-                specs: "القدرة: 5.6 كيلو واط | نظام الشحن: MPPT 100A | شاشة: ملونة لمسية"
-            }
-        ];
-
         // تهيئة وجلب البيانات عند التشغيل
         document.addEventListener("DOMContentLoaded", () => {
             fetchProducts();
@@ -320,12 +289,8 @@
             const errorState = document.getElementById("errorState");
 
             if (API_URL === "رابط_ويب_أب_غوغل_هنا" || !API_URL) {
-                // استخدام البيانات التجريبية إذا لم يتم وضع الرابط الفعلي
-                console.warn("جاري استخدام البيانات التجريبية. قم بتعديل متغير API_URL لعرض بيانات غوغل شيت الفعلي.");
-                allProducts = demoProducts;
                 loadingState.classList.add("hidden");
-                productsGrid.classList.remove("hidden");
-                filterAndRenderProducts();
+                errorState.classList.remove("hidden");
                 return;
             }
 
@@ -339,11 +304,8 @@
                 filterAndRenderProducts();
             } catch (error) {
                 console.error("خطأ في جلب البيانات المباشرة:", error);
-                allProducts = demoProducts; // استخدام الاحتياطي في حال تعذر الاتصال
                 loadingState.classList.add("hidden");
                 errorState.classList.remove("hidden");
-                productsGrid.classList.remove("hidden");
-                filterAndRenderProducts();
             }
         }
 
@@ -372,10 +334,8 @@
             }
 
             filtered.forEach(product => {
-                // جلب صورة افتراضية فخمة في حال لم يكن هناك صورة معينة
                 const imgUrl = product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
                 
-                // صياغة رسالة الواتساب الجاهزة
                 const whatsappMessage = encodeURIComponent(`مرحباً البراء للطاقة الشمسية، أود الاستفسار وحجز الجهاز التالي:\n\n- المنتج: ${product.name}\n- السعر: ${product.price || 'حسب الاتفاق'}\n- الفئة: ${product.category}`);
                 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
@@ -412,10 +372,10 @@
         function filterCategory(category) {
             currentCategory = category;
             
-            // تحديث تصميم الأزرار الفعالة
+            // تحديث تصميم الأزرار الفعالة بالاعتماد على الـ data-category
             const buttons = document.querySelectorAll(".filter-btn");
             buttons.forEach(btn => {
-                if (btn.innerText.includes(category) || (category === "الكل" && btn.innerText === "الكل")) {
+                if (btn.getAttribute("data-category") === category) {
                     btn.className = "filter-btn active px-5 py-2.5 rounded-lg text-sm font-bold bg-solar-dark text-white transition-all duration-300 shadow-sm";
                 } else {
                     btn.className = "filter-btn px-5 py-2.5 rounded-lg text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200";
