@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/9647700000000" target="_blank" class="bg-solar-emerald hover:bg-solar-emeraldDark text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-md shadow-solar-emerald/10 transition-all duration-300 transform hover:-translate-y-0.5 text-sm">
+                <a href="https://wa.me/9647875415845" target="_blank" class="bg-solar-emerald hover:bg-solar-emeraldDark text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-md shadow-solar-emerald/10 transition-all duration-300 transform hover:-translate-y-0.5 text-sm">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
                     <span>استشارة مجانية</span>
                 </a>
@@ -103,11 +103,11 @@
                 نوفر أحدث الألواح الشمسية، البطاريات المتطورة، والأنفيرتيرات الذكية المتكاملة مع خدمة الفحص والتركيب الاحترافي.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#store" class="bg-solar-amber hover:bg-solar-amberDark text-solar-dark font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-solar-amber/20 transition-all duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
-                    تصفح الأجهزة المتاحة
+                <a href="#calculator" class="bg-solar-amber hover:bg-solar-amberDark text-solar-dark font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-solar-amber/20 transition-all duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto">
+                    حاسبة المنظومات الذكية
                 </a>
-                <a href="#features" class="border border-slate-700 hover:border-slate-500 hover:bg-slate-800/40 text-slate-300 font-bold px-8 py-4 rounded-xl transition-all duration-300 w-full sm:w-auto">
-                    لماذا نتميز؟
+                <a href="#store" class="border border-slate-700 hover:border-slate-500 hover:bg-slate-800/40 text-slate-300 font-bold px-8 py-4 rounded-xl transition-all duration-300 w-full sm:w-auto">
+                    تصفح الأجهزة المتاحة
                 </a>
             </div>
         </div>
@@ -141,6 +141,112 @@
                 <div>
                     <h3 class="font-bold text-lg text-solar-dark mb-1">دعم فني مستمر</h3>
                     <p class="text-slate-500 text-sm">خدمة ما بعد البيع ومتابعة دورية لكفاءة المنظومة الخاصة بك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم حاسبة المنظومات الذكية الفخم والجديد -->
+    <section id="calculator" class="py-16 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block py-1 px-3.5 rounded-full text-xs font-bold bg-solar-emerald/10 text-solar-emerald border border-solar-emerald/20 mb-3">الحاسبة الفورية للمنظومات</span>
+                <h2 class="text-3xl font-black text-solar-dark mb-3">صمّم منظومتك الشمسية الذكية</h2>
+                <p class="text-slate-500 text-sm max-w-xl mx-auto">اختر حجم منظومتك المفضلة بالأمبير أو حدد ميزانيتك بالدينار العراقي لتقوم الحاسبة بتوزيع وتجهيز الأجهزة المناسبة لك تلقائياً.</p>
+            </div>
+
+            <!-- أزرار تبديل التبويبات للحاسبة -->
+            <div class="flex justify-center gap-4 mb-10">
+                <button onclick="switchCalcTab('amps')" id="tabBtnAmps" class="px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-solar-dark text-white shadow-md">
+                    <i class="fa-solid fa-bolt-lightning mr-1.5"></i> الحساب بالأمبيرات
+                </button>
+                <button onclick="switchCalcTab('budget')" id="tabBtnBudget" class="px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                    <i class="fa-solid fa-money-bill-wave mr-1.5"></i> الحساب بالميزانية (د.ع)
+                </button>
+            </div>
+
+            <!-- محتوى تبويب الأمبيرات -->
+            <div id="calcTabAmpsContent" class="space-y-6">
+                <label class="block text-center text-sm font-bold text-slate-700 mb-4">اختر عدد الأمبيرات المطلوبة لتشغيل منزلك:</label>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <button onclick="selectAmps(5)" class="amp-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-solar-amber transition-all duration-300 text-center flex flex-col items-center justify-center gap-2 group">
+                        <span class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-solar-dark group-hover:bg-solar-amber/10 group-hover:text-solar-amber transition-colors"><i class="fa-solid fa-house-laptop text-lg"></i></span>
+                        <span class="text-2xl font-black text-solar-dark">5 أمبير</span>
+                        <span class="text-xs text-slate-400">منظومة اقتصادية خفيفة</span>
+                    </button>
+                    <button onclick="selectAmps(10)" class="amp-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-solar-amber transition-all duration-300 text-center flex flex-col items-center justify-center gap-2 group">
+                        <span class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-solar-dark group-hover:bg-solar-amber/10 group-hover:text-solar-amber transition-colors"><i class="fa-solid fa-house text-lg"></i></span>
+                        <span class="text-2xl font-black text-solar-dark">10 أمبير</span>
+                        <span class="text-xs text-slate-400">منظومة متوسطة متكاملة</span>
+                    </button>
+                    <button onclick="selectAmps(15)" class="amp-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-solar-amber transition-all duration-300 text-center flex flex-col items-center justify-center gap-2 group">
+                        <span class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-solar-dark group-hover:bg-solar-amber/10 group-hover:text-solar-amber transition-colors"><i class="fa-solid fa-house-chimney-window text-lg"></i></span>
+                        <span class="text-2xl font-black text-solar-dark">15 أمبير</span>
+                        <span class="text-xs text-slate-400">منظومة عائلية كبيرة</span>
+                    </button>
+                    <button onclick="selectAmps(20)" class="amp-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-solar-amber transition-all duration-300 text-center flex flex-col items-center justify-center gap-2 group">
+                        <span class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-solar-dark group-hover:bg-solar-amber/10 group-hover:text-solar-amber transition-colors"><i class="fa-solid fa-hotel text-lg"></i></span>
+                        <span class="text-2xl font-black text-solar-dark">20 أمبير</span>
+                        <span class="text-xs text-slate-400">منظومة فخمة عالية الطاقة</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- محتوى تبويب الميزانية -->
+            <div id="calcTabBudgetContent" class="space-y-6 hidden">
+                <div class="max-w-md mx-auto bg-white p-6 rounded-2xl border border-slate-100 premium-shadow">
+                    <label for="budgetInput" class="block text-sm font-bold text-slate-700 mb-3">أدخل ميزانيتك بالدينار العراقي (د.ع):</label>
+                    <div class="relative mb-4">
+                        <input type="number" id="budgetInput" placeholder="مثلاً: 5000000" class="w-full pl-24 pr-5 py-3.5 rounded-xl border border-slate-200 focus:border-solar-amber focus:ring-2 focus:ring-solar-amber/20 outline-none transition-all text-lg font-bold">
+                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-sm font-black text-slate-400">د.ع</span>
+                    </div>
+                    <button onclick="calculateByBudget()" class="w-full bg-solar-amber hover:bg-solar-amberDark text-solar-dark font-extrabold py-3.5 rounded-xl shadow-lg shadow-solar-amber/10 transition-colors flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-calculator"></i> احسب المنظومة المثالية لميزانيتي
+                    </button>
+                </div>
+            </div>
+
+            <!-- مساحة عرض نتيجة الحساب الفخمة والمفصلة -->
+            <div id="calcResultContainer" class="mt-12 hidden">
+                <div class="bg-white rounded-3xl border border-slate-100 premium-shadow overflow-hidden transition-all duration-500">
+                    <!-- عنوان النتيجة العام -->
+                    <div class="bg-gradient-to-r from-solar-dark to-solar-navy p-6 sm:p-8 text-white flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-solar-amber font-bold block mb-1">المنظومة المقترحة لك:</span>
+                            <h3 id="resultTitle" class="text-2xl font-black"></h3>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <span class="text-xs text-slate-400 block mb-1">السعر الإجمالي التقريبي:</span>
+                            <div id="resultTotalPriceIQD" class="text-2xl font-black text-solar-emerald"></div>
+                            <div id="resultTotalPriceUSD" class="text-xs text-slate-300 font-bold"></div>
+                        </div>
+                    </div>
+
+                    <!-- صندوق تنبيه خاص بالفائض للميزانية -->
+                    <div id="budgetRefundAlert" class="hidden bg-solar-emerald/10 border-b border-solar-emerald/20 p-4 px-6 flex items-center gap-3 text-solar-emeraldDark text-sm font-bold">
+                        <i class="fa-solid fa-circle-check text-lg"></i>
+                        <span id="budgetRefundText"></span>
+                    </div>
+
+                    <!-- تفاصيل ومكونات المنظومة المقترحة -->
+                    <div class="p-6 sm:p-8">
+                        <h4 class="font-extrabold text-solar-dark mb-6 flex items-center gap-2 text-sm">
+                            <span class="w-2 h-5 bg-solar-amber rounded"></span>
+                            تفاصيل الأجهزة المتضمنة في المنظومة:
+                        </h4>
+                        <div id="calcComponentsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <!-- سيتم ملؤها برمجياً -->
+                        </div>
+
+                        <!-- أزرار إنهاء الطلب -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-between items-center border-t border-slate-100 pt-6">
+                            <p class="text-xs text-slate-400 max-w-md text-center sm:text-right leading-relaxed">المنظومة مصممة لتأمين الاستقرار الكامل للتشغيل، ويشمل العرض جميع التوصيلات المرافقة مع إمكانية التعديل والكشف الفني للتركيب.</p>
+                            <a id="calcWhatsAppBtn" href="" target="_blank" class="w-full sm:w-auto bg-solar-emerald hover:bg-solar-emeraldDark text-white px-8 py-4 rounded-xl font-extrabold flex items-center justify-center gap-2.5 shadow-lg shadow-solar-emerald/10 transition-all duration-300">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>اطلب هذه المنظومة الآن</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,8 +289,8 @@
             <div class="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-500 text-2xl mb-4">
                 <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
-            <h3 class="font-bold text-lg text-solar-dark mb-1">.......</h3>
-            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">.......</p>
+            <h3 class="font-bold text-lg text-solar-dark mb-1">عذراً، لم نتمكن من جلب الأجهزة</h3>
+            <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">يرجى مراجعة رابط السكربت أو التأكد من إتصالك بالإنترنت.</p>
         </div>
 
         <!-- شبكة المنتجات (Products Grid) -->
@@ -269,6 +375,9 @@
         
         // رقم الواتساب الذي ستستلمون عليه الطلبات (مع الرمز الدولي بدون أصفار إضافية)
         const WHATSAPP_NUMBER = "9647875415845"; 
+        
+        // سعر الصرف المعتمد لتحويل الدولار إلى دينار عراقي
+        const USD_TO_IQD = 1500;
 
         let allProducts = [];
         let currentCategory = "الكل";
@@ -446,6 +555,221 @@
             if (event.target === modal) {
                 closeModal();
             }
+        }
+
+
+        // ==========================================
+        //  منطق حاسبة المنظومة الشمسية الذكية الجديد
+        // ==========================================
+
+        // تبديل تبويبات الحاسبة (أمبيرات / ميزانية)
+        function switchCalcTab(tab) {
+            const tabBtnAmps = document.getElementById("tabBtnAmps");
+            const tabBtnBudget = document.getElementById("tabBtnBudget");
+            const calcTabAmpsContent = document.getElementById("calcTabAmpsContent");
+            const calcTabBudgetContent = document.getElementById("calcTabBudgetContent");
+
+            if (tab === 'amps') {
+                tabBtnAmps.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-solar-dark text-white shadow-md";
+                tabBtnBudget.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200";
+                calcTabAmpsContent.classList.remove("hidden");
+                calcTabBudgetContent.classList.add("hidden");
+            } else {
+                tabBtnBudget.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-solar-dark text-white shadow-md";
+                tabBtnAmps.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200";
+                calcTabBudgetContent.classList.remove("hidden");
+                calcTabAmpsContent.classList.add("hidden");
+            }
+        }
+
+        // تحويل نصوص الأسعار بذكاء إلى قيم رقمية صحيحة
+        function parseNumericPrice(priceStr) {
+            if (!priceStr) return 0;
+            const cleanStr = priceStr.toString().replace(/[^0-9.]/g, '');
+            return parseFloat(cleanStr) || 0;
+        }
+
+        // بناء وتخمين حزم المنظومات المتكاملة اعتماداً على سلع غوغل شيت
+        function buildSystemPackage(amps) {
+            // فرز منتجات غوغل شيت لثلاثة أصناف رئيسية
+            const panels = allProducts.filter(p => p.category === "ألواح شمسية");
+            const batteries = allProducts.filter(p => p.category === "بطاريات");
+            const inverters = allProducts.filter(p => p.category === "انفيرتيرات");
+
+            // قيم إحتياطية فخمة (Fallback) في حالة عدم وجود منتج مطابق بالكامل بالشيت لتفادي الأخطاء
+            const backupPanel = { name: "لوح شمسي مونو 550 واط كفاءة عالية", price: "$115", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80", specs: "كفاءة: 21.3% | ضمان: 25 سنة" };
+            const backupBattery = { name: "بطارية ليثيوم 100 أمبير 48 فولت", price: "$1,250", image: "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80", specs: "سعة: 4.8 كيلو واط ساعي | LiFePO4" };
+            const backupInverter = { name: "انفيرتير ذكي هجين 5.6 كيلو واط دبل MPPT", price: "$480", image: "https://images.unsplash.com/photo-1548613053-220ef358109a?auto=format&fit=crop&w=800&q=80", specs: "قدرة: 5.6kW | ميزة الواي فاي" };
+
+            // تحديد أنسب الأجهزة والكميات حسب الأمبيرية المطلوبة
+            let finalPanel = panels[0] || backupPanel;
+            let finalBattery = batteries[0] || backupBattery;
+            let finalInverter = inverters[0] || backupInverter;
+
+            let panelCount = 4;
+            let batteryCount = 1;
+            let inverterCount = 1;
+
+            if (amps <= 5) {
+                panelCount = 4;
+                batteryCount = 1;
+                // البحث عن انفيرتير منخفض السعة والتكلفة إن وجد
+                finalInverter = inverters.find(i => i.name.includes("3") || parseNumericPrice(i.price) < 400) || inverters[0] || backupInverter;
+            } else if (amps <= 10) {
+                panelCount = 8;
+                batteryCount = 1;
+                finalInverter = inverters.find(i => i.name.includes("5") || i.name.includes("6")) || inverters[0] || backupInverter;
+            } else if (amps <= 15) {
+                panelCount = 10;
+                batteryCount = 2;
+                finalInverter = inverters.find(i => i.name.includes("6") || i.name.includes("8")) || inverters[0] || backupInverter;
+            } else { // 20 أمبير فما فوق
+                panelCount = 14;
+                batteryCount = 2;
+                finalInverter = inverters.find(i => i.name.includes("8") || i.name.includes("10")) || inverters[0] || backupInverter;
+            }
+
+            const pPrice = parseNumericPrice(finalPanel.price);
+            const bPrice = parseNumericPrice(finalBattery.price);
+            const iPrice = parseNumericPrice(finalInverter.price);
+
+            const totalUSD = (pPrice * panelCount) + (bPrice * batteryCount) + (iPrice * inverterCount);
+            const totalIQD = totalUSD * USD_TO_IQD;
+
+            return {
+                amps: amps,
+                totalUSD: totalUSD,
+                totalIQD: totalIQD,
+                items: [
+                    { product: finalInverter, count: inverterCount, role: "جهاز الإنفيرتير الذكي" },
+                    { product: finalBattery, count: batteryCount, role: "مخزن الطاقة (البطارية)" },
+                    { product: finalPanel, count: panelCount, role: "أقراص الطاقة (الألواح)" }
+                ]
+            };
+        }
+
+        // اختيار أمبيرية محددة وعرض نتيجتها
+        function selectAmps(amps) {
+            // تحديث بطاقات الأمبيرية لتوضيح الخيار الفعال
+            const cards = document.querySelectorAll(".amp-card");
+            cards.forEach(card => {
+                if (card.innerText.includes(amps + " أمبير")) {
+                    card.classList.add("border-solar-amber", "ring-2", "ring-solar-amber/20");
+                } else {
+                    card.classList.remove("border-solar-amber", "ring-2", "ring-solar-amber/20");
+                }
+            });
+
+            const system = buildSystemPackage(amps);
+            renderSystemResult(system, "amps", 0);
+        }
+
+        // الحساب بالاعتماد على ميزانية المستخدم بالدينار العراقي
+        function calculateByBudget() {
+            const budgetInput = document.getElementById("budgetInput");
+            const rawBudget = parseFloat(budgetInput.value);
+
+            if (!rawBudget || rawBudget <= 0) {
+                alert("يرجى إدخال مبلغ ميزانية صحيح بالدينار العراقي.");
+                return;
+            }
+
+            // فحص كلفة المنظومات القياسية الأربعة ومطابقتها بحدود ميزانية المستخدم
+            const standardAmps = [20, 15, 10, 5];
+            let matchingSystem = null;
+
+            for (let amps of standardAmps) {
+                const sys = buildSystemPackage(amps);
+                if (rawBudget >= sys.totalIQD) {
+                    matchingSystem = sys;
+                    break;
+                }
+            }
+
+            const resultContainer = document.getElementById("calcResultContainer");
+            
+            // إذا كانت الميزانية قليلة جداً لـ 5 أمبير
+            if (!matchingSystem) {
+                resultContainer.classList.remove("hidden");
+                resultContainer.innerHTML = `
+                    <div class="bg-white rounded-3xl border border-red-100 p-8 text-center premium-shadow">
+                        <div class="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-500 text-2xl mx-auto mb-4">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <h3 class="font-extrabold text-lg text-solar-dark mb-2">الميزانية غير كافية لمنظومة متكاملة</h3>
+                        <p class="text-slate-500 text-sm max-w-md mx-auto mb-6">
+                            ميزانيتك الحالية أقل من كلفة أصغر منظومة شمسية متكاملة لدينا (5 أمبير). يمكنك تصفح معرض المنتجات بالأسفل واقتناء الأجهزة والقطع بشكل منفرد ومرحلي.
+                        </p>
+                        <a href="#store" class="inline-block bg-solar-dark text-white font-bold px-6 py-3 rounded-xl hover:bg-slate-800 transition-colors text-sm">تصفح معرض الأجهزة</a>
+                    </div>
+                `;
+                resultContainer.scrollIntoView({ behavior: 'smooth' });
+                return;
+            }
+
+            // حساب المبلغ الفائض المتبقي من الميزانية للزبون
+            const refund = rawBudget - matchingSystem.totalIQD;
+            renderSystemResult(matchingSystem, "budget", refund);
+        }
+
+        // عرض تفاصيل المنظومة المقترحة في الواجهة
+        function renderSystemResult(system, type, refund) {
+            const container = document.getElementById("calcResultContainer");
+            const title = document.getElementById("resultTitle");
+            const totalIQD = document.getElementById("resultTotalPriceIQD");
+            const totalUSD = document.getElementById("resultTotalPriceUSD");
+            const refundAlert = document.getElementById("budgetRefundAlert");
+            const refundText = document.getElementById("budgetRefundText");
+            const componentsGrid = document.getElementById("calcComponentsGrid");
+            const whatsAppBtn = document.getElementById("calcWhatsAppBtn");
+
+            // تهيئة العنوان والمجموع المالي
+            title.innerText = `منظومة فخمة بطاقة ${system.amps} أمبير`;
+            totalIQD.innerText = system.totalIQD.toLocaleString() + " د.ع";
+            totalUSD.innerText = `($${system.totalUSD.toLocaleString()})`;
+
+            // معالجة المبلغ المتبقي إن وجد
+            if (type === "budget" && refund > 0) {
+                refundAlert.classList.remove("hidden");
+                refundText.innerText = `مبارك! ميزانيتك تغطي هذه المنظومة بالكامل، ويتبقى معك مبلغ وقدره (${refund.toLocaleString()} د.ع) فائض في جيبك!`;
+            } else {
+                refundAlert.classList.add("hidden");
+            }
+
+            // ملء شبكة المكونات المقترحة
+            componentsGrid.innerHTML = "";
+            system.items.forEach(item => {
+                const img = item.product.image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80";
+                const card = document.createElement("div");
+                card.className = "bg-slate-50 p-4 rounded-2xl border border-slate-100 flex flex-col justify-between";
+                card.innerHTML = `
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-14 h-14 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0">
+                            <img src="${img}" alt="${item.product.name}" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <span class="text-[10px] bg-solar-amber/10 text-solar-amberDark font-bold px-2 py-0.5 rounded">${item.role}</span>
+                            <h5 class="font-extrabold text-solar-dark text-xs sm:text-sm leading-snug line-clamp-2 mt-1">${item.product.name}</h5>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-200/60">
+                        <span class="text-xs font-bold text-slate-500">الكمية المطلوبة:</span>
+                        <span class="text-sm font-black text-solar-emerald">${item.count} حبة</span>
+                    </div>
+                `;
+                componentsGrid.appendChild(card);
+            });
+
+            // صياغة رسالة الطلب الحصرية للواتساب
+            const componentsSummary = system.items.map(i => `- ${i.count}x ${i.product.name} (${i.role})`).join('\n');
+            const message = encodeURIComponent(`مرحباً النواعير للطاقة المتجددة، قمت باستخدام الحاسبة الذكية في الموقع وأود حجز المنظومة التالية:\n\n*نوع المنظومة:* ${system.amps} أمبير\n*التكلفة التقريبية للقطع:* ${system.totalIQD.toLocaleString()} دينار عراقي ($${system.totalUSD.toLocaleString()})\n\n*الأجهزة المقترحة:\n${componentsSummary}\n\nبانتظار تواصلكم للكشف والتركيب.`);
+            whatsAppBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+
+            // إظهار القسم والتوجه له بأنيميشن ناعم
+            container.classList.remove("hidden");
+            setTimeout(() => {
+                container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
         }
     </script>
 </body>
